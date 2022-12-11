@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input id="a" type="number"> /
+    <input id="b" type="number">
+    <button onclick="hesabla()"> = </button>
+    <span id="c"></span>
+
+
+    <script>
+        const a = document.getElementById("a")
+        const b = document.getElementById("b")
+        const c = document.getElementById("c")
+    
+         function hesabla() {
+            let qaliq = a.value % b.value ;
+            let qismet =(a.value - qaliq) / b.value
+         c.innerHTML = `${qismet}, qaliq  ${qaliq}` ;
+         }
+    </script>
+    
+</body>
+</html>

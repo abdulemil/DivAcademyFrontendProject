@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input id="a" type="number" >
+    <select  id="op">
+        <option >+</option>
+        <option >-</option>
+        <option >*</option>
+        <option >/</option>
+    </select>
+    <input id="b" type="number">
+    <button onclick="hesabla()"> = </button>
+    <span id="c"></span>
+    <script>
+        const a = document.getElementById("a")
+        const b = document.getElementById("b")
+        const c = document.getElementById("c")
+        const op = document.getElementById("op")
+            
+            function hesabla() {
+                c.innerHTML = eval(a.value + op.value + b.value) ;
+            }
+    </script>
+    
+</body>
+</html>
